@@ -1,7 +1,7 @@
-FROM totem/python-base:2.7-trusty-b3
+FROM totem/python-base:3.4-trusty-b4
 
 ADD requirements.txt /opt/gollum/
-RUN /bin/bash -c "pip install -r /opt/gollum/requirements.txt"
+RUN /bin/bash -c "pip3 install -r /opt/gollum/requirements.txt"
 
 ADD . /opt/gollum
 WORKDIR /opt/gollum
