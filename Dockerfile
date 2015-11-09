@@ -6,5 +6,6 @@ RUN /bin/bash -c "pip install -r /opt/gollum/requirements.txt"
 ADD . /opt/gollum
 WORKDIR /opt/gollum
 
+
 EXPOSE 8080
 CMD ["server.py"]
